@@ -1,0 +1,212 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 10vh 90vh;
+    gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "left middle right"
+        "left middle right";
+    }
+
+.header {
+    display: grid;
+    grid-template-columns: 35vw 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+        "inside1 inside2 inside2"
+        "inside1 inside2 inside2"
+        "inside1 inside2 inside2";
+    }
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+        "profile profile profile"
+        "org org org"
+        "recent recent recent";
+    }
+    
+.middle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    gap: 10px;
+    grid-template-areas: 
+        "post post post"
+        "feed1 feed1 feed1"
+        "feed2 feed2 feed2";
+    }
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+        "pic typing"
+        "pic typing"
+        "attachments attachments";
+    }
+
+.feed1, .feed2 {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+        "picforfeed name"
+        "content content"
+        "like like";
+    }
+
+.right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr 3fr;
+    gap: 10px;
+    grid-template-areas: 
+        "news"
+        "viewed"
+        "feedadd";
+    }
+
+.picforfeed {
+    margin: 10px 0px 0px 10px;
+    grid-area: picforfeed;
+    background-color: white;
+}
+
+.news {
+    margin: 10px 10px 0px 10px;
+    grid-area: news;
+    background-color: orange;
+}
+
+.viewed {
+    margin: 10px 10px 0px 10px;
+    grid-area: viewed;
+    background-color: orange;
+}
+
+.feedadd {
+    margin: 10px 10px 0px 10px;
+    grid-area: feedadd;
+    background-color: orange;
+}
+
+.name {
+    margin: 10px 10px 0px 10px;
+    grid-area: name;
+    background-color: white;
+}
+
+.content {
+    margin: 10px 10px 0px 10px;
+    grid-area: content;
+    background-color: white;
+}
+
+.like {
+    margin: 10px 10px 0px 10px;
+    grid-area: like;
+    background-color: white;
+}
+
+.pic {
+    margin: 10px 0px 0px 10px;
+    grid-area: pic;
+    background-color: purple;
+}
+
+.attachments {
+    height: 30px;
+    margin: 10px 10px 0px 10px;
+    grid-area: attachments;
+    background-color: purple;
+}
+
+.typing {
+    margin: 10px 10px 0px 10px;
+    grid-area: typing;
+    background-color: purple;
+}
+
+.header {
+    grid-area: header;
+    background-color: #ff0000;
+}
+
+.left {
+    grid-area: left;
+    background-color: #ff0000;
+}
+
+.middle {
+    grid-area: middle;
+    background-color: #ff0000;
+}
+
+.right {
+    grid-area: right;
+    background-color: #ff0000;
+}
+
+.insideHeader1 {
+    margin: 10px 0px 0px 10px;
+    grid-area: inside1;
+    background-color: cyan;
+}
+.insideHeader2 {
+    margin: 10px 10px 0px 10px;
+    grid-area: inside2;
+    background-color: cyan;
+}
+
+.profile{
+    margin: 10px 10px 0px 10px;
+    grid-area: profile;
+    background-color: yellow;
+}
+
+.org{
+    margin: 10px 10px 0px 10px;
+    grid-area: org;
+    background-color: yellow;
+}
+
+.recent{
+    margin: 10px 10px 0px 10px;
+    grid-area: recent;
+    background-color: yellow;
+}
+
+.post {
+    margin: 10px 10px 0px 10px;
+    grid-area: post;
+    background-color: lime;
+}
+
+.feed1 {
+    margin: 10px 10px 0px 10px;
+    grid-area: feed1;
+    background-color: lime;
+}
+
+.feed2 {
+    margin: 10px 10px 0px 10px;
+    grid-area: feed2;
+    background-color: lime;
+}
+
+p {
+    margin: 0px;
+}
+
+* {
+    font-weight: bold;
+}
