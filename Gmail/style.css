@@ -1,0 +1,284 @@
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 3fr;
+    grid-template-rows: 7vh 93vh;
+    gap: 5px;
+    grid-template-areas: 
+        "headerL headerM headerR headerR"
+        "left middle right veryright"
+        "left middle right veryright";
+    }
+
+.headerLeft {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "search logo"
+    }
+
+.headerRight {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "other profile"
+    }
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 40fr 10fr 20fr;
+    gap: 5px;
+    grid-template-areas: 
+        "compose"
+        "inbox"
+        "meet"
+        "chat"
+    }
+
+.inbox {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 25px;
+    gap: 5px;
+    grid-template-areas: 
+        "img name count"
+    }
+
+.chat {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 25px 25px;
+    gap: 5px;
+    grid-template-areas: 
+        "chatimg chatname"
+        "chatimg chatmessage"
+    }
+
+.middle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7vh 93vh;
+    gap: 5px;
+    grid-template-areas: 
+        "sorting"
+        "emails"
+    }
+
+.sorting {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "selectall refresh emailcount pagearrows"
+    }
+
+.emails {
+    display: grid;
+    grid-template-columns: 0.1fr 0.2fr 1.4fr 2fr 0.5fr;
+    grid-template-rows: 35px;
+    gap: 5px;
+    grid-template-areas: 
+        "select star from subject time"
+}
+
+.veryright {
+    margin: 0px 0px 0px 0px;
+    grid-area: veryright;
+    background-color: purple;
+}
+
+.select {
+    margin: 5px 0px 0px 5px;
+    grid-area: select;
+    background-color: red;
+}
+
+.star {
+    margin: 5px 0px 0px 0px;
+    grid-area: star;
+    background-color: red;
+}
+
+.from {
+    margin: 5px 0px 0px 0px;
+    grid-area: from;
+    background-color: red;
+}
+
+.subject {
+    margin: 5px 0px 0px 0px;
+    grid-area: subject;
+    background-color: red;
+}
+
+.time {
+    margin: 5px 5px 0px 0px;
+    grid-area: time;
+    background-color: red;
+}
+
+.selectall {
+    margin: 5px 0px 0px 5px;
+    grid-area: selectall;
+    background-color: red;
+}
+
+.refresh {
+    margin: 5px 100px 0px 0px;
+    grid-area: refresh;
+    background-color: red;
+}
+
+.emailcount {
+    margin: 5px 0px 0px 400px;
+    grid-area: emailcount;
+    background-color: red;
+}
+
+.pagearrows {
+    margin: 5px 5px 0px 0px;
+    grid-area: pagearrows;
+    background-color: red;
+}
+
+.sorting {
+    margin: 5px 5px 0px 5px;
+    grid-area: sorting;
+    background-color: orange;
+}
+
+.emails {
+    margin: 5px 5px 0px 5px;
+    grid-area: emails;
+    background-color: orange;
+}
+
+.chatimg {
+    margin: 5px 0px 0px 5px;
+    grid-area: chatimg;
+    background-color: lightskyblue;
+}
+
+.chatname {
+    margin: 5px 5px 0px 0px;
+    grid-area: chatname;
+    background-color: lightskyblue;
+}
+
+.chatmessage {
+    margin: 0px 5px 0px 0px;
+    grid-area: chatmessage;
+    background-color: lightskyblue;
+}
+
+
+.img {
+    margin: 5px 0px 0px 5px;
+    grid-area: img;
+    background-color: lightskyblue;
+}
+
+.name {
+    margin: 5px 0px 0px 0px;
+    grid-area: name;
+    background-color: lightskyblue;
+}
+
+.count {
+    margin: 5px 5px 0px 0px;
+    grid-area: count;
+    background-color: lightskyblue;
+}
+
+.compose {
+    margin: 5px 5px 0px 5px;
+    grid-area: compose;
+    background-color: white;
+}
+
+.inbox {
+    margin: 5px 5px 0px 5px;
+    grid-area: inbox;
+    background-color: white;
+}
+
+.meet {
+    margin: 5px 5px 0px 5px;
+    grid-area: meet;
+    background-color: white;
+}
+
+.chat {
+    margin: 5px 5px 0px 5px;
+    grid-area: chat;
+    background-color: white;
+}
+
+.profile {
+    margin: 5px 5px 5px 0px;
+    grid-area: profile;
+    background-color: pink;
+}
+
+.other {
+    margin: 5px 0px 5px 180px;
+    grid-area: other;
+    background-color: pink;
+}
+
+.logo {
+    margin: 5px 5px 5px 0px;
+    grid-area: logo;
+    background-color: cyan;
+}
+
+.search {
+    margin: 5px 0px 5px 5px;
+    grid-area: search;
+    background-color: cyan;
+}
+
+.headerLeft {
+     grid-area: headerL;
+    background-color: yellow;
+ }
+
+.headerMid {
+    grid-area: headerM;
+    background-color: yellow;
+}
+
+.headerRight {
+    grid-area: headerR;
+    background-color: yellow;
+}
+
+.left {
+    grid-area: left;
+    background-color: rgb(227, 101, 101);
+}
+
+.middle {
+    grid-area: middle;
+    background-color: rgb(101, 227, 101);
+}
+
+.right {
+    grid-area: right;
+    background-color: rgb(101, 101, 227);
+}
+
+p {
+    margin: 0px;
+}
+
+* {
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+}
