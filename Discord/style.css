@@ -1,0 +1,265 @@
+.container {
+    display: grid;
+    grid-template-columns: 1.3fr 4.5fr 28fr;
+    grid-template-rows: 7vh 93vh;
+    gap: 5px;
+    grid-template-areas: 
+        "serverlist second messages"
+        "serverlist second messages"
+        "serverlist second messages";
+    }
+
+
+.serverlist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 2fr;
+    gap: 5px;
+    grid-template-areas: 
+        "home"
+        "server1"
+        "server2"
+        "joinserver";
+}
+
+.second {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 10fr 0.5fr;
+    gap: 5px;
+    grid-template-areas: 
+        "servername"
+        "channels"
+        "accinfo";
+}
+
+.accinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "pfp name buttons"
+        "pfp tag buttons";
+}
+
+.messages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "top"
+        "mes"
+        "typing";
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "current pins search help";
+}
+
+.mes {
+    display: grid;
+    grid-template-columns: 0.05fr 0.15fr 1fr;
+    grid-template-rows: 10fr 0.1fr 0.1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "filler filler filler"
+        "userimg username usertime"
+        "userimg usermessage usermessage";
+}
+
+.typing {
+    display: grid;
+    grid-template-columns: 0.01fr 1fr 0.25fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "attachment messagebox emojis";
+}
+
+.emojis {
+    margin: 5px 5px 5px 5px;
+    grid-area: emojis;
+    background-color: maroon;
+}
+
+.messagebox {
+    margin: 5px 0px 5px 0px;
+    grid-area: messagebox;
+    background-color: maroon;
+}
+
+.attachment {
+    margin: 5px 0px 5px 5px;
+    grid-area: attachment;
+    background-color: maroon;
+}
+
+.filler {
+    margin: 0px 5px 5px 5px;
+    grid-area: filler;
+    background-color: rgb(249, 114, 249);
+}
+
+.usertime {
+    margin: 0px 5px 0px 0px;
+    grid-area: usertime;
+    background-color: teal;
+}
+
+.usermessage {
+    margin: 0px 5px 5px 0px;
+    grid-area: usermessage;
+    background-color: teal;
+}
+
+.username {
+    margin: 0px 0px 0px 0px;
+    grid-area: username;
+    background-color: teal;
+}
+
+.userimg {
+    margin: 0px 0px 5px 5px;
+    grid-area: userimg;
+    background-color: teal;
+}
+
+.help {
+    margin: 5px 5px 5px 0px;
+    grid-area: help;
+    background-color: yellow;
+}
+
+.search {
+    margin: 5px 0px 5px 0px;
+    grid-area: search;
+    background-color: yellow;
+}
+
+.pins {
+    margin: 5px 0px 5px 0px;
+    grid-area: pins;
+    background-color: yellow;
+}
+
+.current {
+    margin: 5px 800px 5px 5px;
+    grid-area: current;
+    background-color: yellow;
+}
+
+.typing {
+    margin: 0px 5px 05px 5px;
+    grid-area: typing;
+    background-color: rgb(249, 114, 249);
+}
+
+.mes {
+    margin: 0px 5px 0px 5px;
+    grid-area: mes;
+    background-color: rgb(249, 114, 249);
+}
+
+.top {
+    margin: 5px 5px 0px 5px;
+    grid-area: top;
+    background-color: rgb(249, 114, 249);
+}
+
+.tag {
+    margin: 5px 5px 0px 5px;
+    grid-area: tag;
+    background-color: green;
+}
+
+.name {
+    margin: 5px 5px 0px 5px;
+    grid-area: name;
+    background-color: green;
+}
+
+.buttons {
+    margin: 5px 5px 0px 5px;
+    grid-area: buttons;
+    background-color: green;
+}
+
+.pfp {
+    margin: 5px 5px 0px 5px;
+    grid-area: pfp;
+    background-color: green;
+}
+
+.accinfo {
+    margin: 0px 5px 5px 5px;
+    grid-area: accinfo;
+    background-color: pink;
+}
+
+.channels {
+    margin: 0px 5px 0px 5px;
+    grid-area: channels;
+    background-color: pink;
+}
+
+.servername {
+    margin: 5px 5px 0px 5px;
+    grid-area: servername;
+    background-color: pink;
+}
+
+.joinserver {
+    margin: 0px 5px 660px 5px;
+    grid-area: joinserver;
+    background-color: gold;
+}
+
+.server2 {
+    margin: 0px 5px 0px 5px;
+    grid-area: server2;
+    background-color: gold;
+}
+
+.server1 {
+    margin: 0px 5px 0px 5px;
+    grid-area: server1;
+    background-color: gold;
+}
+
+.home {
+    margin: 5px 5px 0px 5px;
+    grid-area: home;
+    background-color: gold;
+}
+
+.messages {
+    grid-area: messages;
+    background-color: lime;
+}
+
+.second {
+    grid-area: second;
+    background-color: cyan;
+}
+
+.serverlist {
+    grid-area: serverlist;
+    background-color: red;
+    }
+
+p {
+    margin: 0px;
+}
+
+* {
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+}
